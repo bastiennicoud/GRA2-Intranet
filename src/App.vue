@@ -11,6 +11,11 @@ export default {
 </script>
 
 <style lang="scss">
+// import the bulma css framework
+@import '~bulma';
+
+// import own global vars
+@import './assets/globals.scss';
 
 * {
   font-family: Helvetica, Arial, sans-serif;

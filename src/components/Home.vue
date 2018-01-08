@@ -17,8 +17,4 @@ export default {
 
 <style lang="scss" scoped>
 
-.home {
-  background-color: bisque;
-}
-
 </style>
