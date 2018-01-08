@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .home {
   background-color: bisque;
