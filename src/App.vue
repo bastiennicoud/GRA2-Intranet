@@ -1,13 +1,31 @@
 <template>
   <div id="app">
 
-    <!-- Global app components -->
+    <!-- Global app navigation -->
     <header-nav></header-nav>
     <base-nav></base-nav>
-    <side-dashboard></side-dashboard>
 
-    <!-- The router view (display content of the page) -->
-    <router-view/>
+    <!-- App content -->
+    <div class="columns is-gapless">
+      <div class="column is-narrow">
+
+        <!-- Displays the dashboard in the left of the site -->
+        <side-dashboard></side-dashboard>
+
+      </div>
+
+      <div class="column">
+
+        <!-- The router view (display content of the page) -->
+        <transition name="fade" mode="out-in">
+          <router-view/>
+        </transition>
+
+      </div>
+    </div>
+
+    <!-- App footer -->
+    <app-footer></app-footer>
 
   </div>
 </template>
@@ -17,9 +35,10 @@
 import HeaderNav from '@/components/nav/HeaderNav.vue'
 import BaseNav from '@/components/nav/BaseNav.vue'
 import SideDashboard from '@/components/dashboard/SideDashboard.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
 export default {
-  components: { HeaderNav, BaseNav, SideDashboard }
+  components: { HeaderNav, BaseNav, SideDashboard, AppFooter }
 }
 </script>
 
@@ -29,7 +48,6 @@ export default {
 @import './assets/globals.scss';
 
 * {
-  //font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

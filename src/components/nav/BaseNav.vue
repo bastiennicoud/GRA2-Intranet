@@ -1,11 +1,13 @@
 <template>
   <div id="base-nav">
 
+    <!-- The base navigation of the intranet -->
+    <!-- He disblays global links, and provides a notification zone (for Cpnv's global infos...) -->
     <section class="hero is-info">
       <div class="hero-body">
-        <div class="container">
+        <div class="container has-text-centered">
           <h1 class="subtitle">
-            Primary title
+            Une zone pour communiquer des informations générales
           </h1>
         </div>
       </div>
@@ -13,24 +15,30 @@
         <div class="container">
           <div class="tabs is-boxed is-medium is-fullwidth">
             <ul>
-              <router-link tag="li" class="is-active" to="calendar">
+
+              <!-- All the navigation links, with a little icon -->
+              <router-link tag="li" :to="{ name: 'home' }">
+                <a><b-icon icon="home"></b-icon>Acceuil</a>
+              </router-link>
+              <router-link tag="li" to="calendar">
                 <a><b-icon icon="calendar-multiple"></b-icon>Calendriers</a>
               </router-link>
               <router-link tag="li" to="infos">
-                <a>Informations</a>
+                <a><b-icon icon="information"></b-icon>Informations</a>
               </router-link>
               <router-link tag="li" to="docs">
-                <a>Documents</a>
+                <a><b-icon icon="file-document"></b-icon>Documents</a>
               </router-link>
               <router-link tag="li" to="lists">
-                <a>Listes</a>
+                <a><b-icon icon="format-list-numbers"></b-icon>Listes</a>
               </router-link>
               <router-link tag="li" to="apps">
-                <a>Applications</a>
+                <a><b-icon icon="apps"></b-icon>Applications</a>
               </router-link>
               <router-link tag="li" to="wiki">
-                <a>Wiki</a>
+                <a><b-icon icon="earth"></b-icon>Wiki</a>
               </router-link>
+
             </ul>
           </div>
         </div>
@@ -44,7 +52,7 @@
 export default {
   data () {
     return {
-      msg: 'Base nav'
+      activeTab: 0
     }
   }
 }
