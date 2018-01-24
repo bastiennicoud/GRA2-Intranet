@@ -1,11 +1,14 @@
 <template>
   <div id="app">
+
     <!-- Global app components -->
     <header-nav></header-nav>
     <base-nav></base-nav>
     <side-dashboard></side-dashboard>
+
     <!-- The router view (display content of the page) -->
     <router-view/>
+
   </div>
 </template>
 

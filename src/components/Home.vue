@@ -1,12 +1,11 @@
 <template>
-  <div class="home">
+  <div id="home">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
   data () {
     return {
       msg: 'Intranet CPNV'
