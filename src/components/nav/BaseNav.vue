@@ -20,22 +20,22 @@
               <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="home"></b-icon>Acceuil</a>
               </router-link>
-              <router-link tag="li" to="calendar">
+              <router-link tag="li" :to="{ name: 'shedule' }">
                 <a><b-icon icon="calendar-multiple"></b-icon>Calendriers</a>
               </router-link>
-              <router-link tag="li" to="infos">
+              <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="information"></b-icon>Informations</a>
               </router-link>
-              <router-link tag="li" to="docs">
+              <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="file-document"></b-icon>Documents</a>
               </router-link>
-              <router-link tag="li" to="lists">
+              <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="format-list-numbers"></b-icon>Listes</a>
               </router-link>
-              <router-link tag="li" to="apps">
+              <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="apps"></b-icon>Applications</a>
               </router-link>
-              <router-link tag="li" to="wiki">
+              <router-link tag="li" :to="{ name: 'home' }">
                 <a><b-icon icon="earth"></b-icon>Wiki</a>
               </router-link>
 

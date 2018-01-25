@@ -1,8 +1,6 @@
 <template>
-  <div id="home">
-
-    <h1>{{msg}}</h1>
-
+  <div id="absence">
+    {{msg}}
   </div>
 </template>
 
@@ -10,7 +8,7 @@
 export default {
   data () {
     return {
-      msg: 'Intranet CPNV'
+      msg: 'Absences'
     }
   }
 }

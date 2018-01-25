@@ -1,7 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Home from '@/components/Home'
-import ScheduleCalendar from '@/components/calendar/ScheduleCalendar.vue'
+
+import Schedule from '@/components/calendar/Schedule.vue'
+import Calendar from '@/components/calendar/Calendar.vue'
+import Absence from '@/components/calendar/Absence.vue'
+import Events from '@/components/calendar/Events.vue'
+import Booking from '@/components/calendar/Booking.vue'
 
 Vue.use(Router)
 
@@ -14,9 +20,31 @@ export default new Router({
       component: Home
     },
     {
-      path: '/calendar',
-      name: 'calendar',
-      component: ScheduleCalendar
+      path: '/shedule',
+      name: 'shedule',
+      component: Schedule,
+      children: [
+        {
+          path: 'calendar',
+          name: 'calendar',
+          component: Calendar
+        },
+        {
+          path: 'absence',
+          name: 'absence',
+          component: Absence
+        },
+        {
+          path: 'events',
+          name: 'events',
+          component: Events
+        },
+        {
+          path: 'booking',
+          name: 'booking',
+          component: Booking
+        }
+      ]
     }
   ],
   scrollBehavior (to, from, savedPosition) {
