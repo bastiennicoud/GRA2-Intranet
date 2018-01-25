@@ -39,12 +39,16 @@
 
     </div>
 
-    <Schedule 
-      :time-ground="['07:00', '18:00']" 
-      :week-ground="['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi']" 
-      :color="['#3498db']"
-      :task-detail="calendarTasks">
-    </Schedule>
+    <div class="columns is-mobile is-centered is-multiline">
+      <div class="column">
+        <Schedule 
+          :time-ground="['07:00', '18:00']" 
+          :week-ground="['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi']" 
+          :color="['#3498db']"
+          :task-detail="calendarTasks">
+        </Schedule>
+      </div>
+    </div>
 
   </div>
 </template>

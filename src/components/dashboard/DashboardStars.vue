@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard-stars">
 
-    <p class="title">Favoris</p>
+    <p class="title is-spaced">Favoris</p>
 
     <div class="menu">
       <p class="menu-label">

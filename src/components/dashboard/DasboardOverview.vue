@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard-overview">
 
-    <p class="title">Dashboard</p>
+    <p class="title is-spaced">Dashboard</p>
 
     <p class="subtitle is-4">Actuellement</p>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard-todos">
 
-    <p class="title">Todo list</p>
+    <p class="title is-spaced">Todo list</p>
 
     <p class="subtitle is-4">Mots-clefs</p>
     <p></p>

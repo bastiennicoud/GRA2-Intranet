@@ -3,14 +3,7 @@
 
     <!-- The base navigation of the intranet -->
     <!-- He disblays global links, and provides a notification zone (for Cpnv's global infos...) -->
-    <section class="hero is-info">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="subtitle">
-            Une zone pour communiquer des informations générales
-          </h1>
-        </div>
-      </div>
+    <section class="hero is-primary is-bold">
       <div class="hero-foot">
         <div class="container">
           <div class="tabs is-boxed is-medium is-fullwidth">
@@ -59,5 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.hero-foot {
+  margin-top: 50px;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard-fastcal">
 
-    <p class="title">Calendrier</p>
+    <p class="title is-spaced">Calendrier</p>
 
     <b-datepicker
       inline

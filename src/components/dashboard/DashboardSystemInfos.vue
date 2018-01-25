@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard-system-infos">
 
-    <p class="title">Etat des systemes informatiques</p>
+    <p class="title is-spaced">Etat des systemes informatiques</p>
 
     <div class="mycal-message">
       <b-message type="is-warning" has-icon>
