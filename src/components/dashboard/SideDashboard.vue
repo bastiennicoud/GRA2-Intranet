@@ -17,6 +17,12 @@
               <b-icon icon="calendar"></b-icon>
             </button>
           </b-tooltip>
+
+          <b-tooltip type="is-light" label="Todo list" position="is-right">
+            <button class="button is-info mg-10" @click="open('todos')">
+              <b-icon icon="check"></b-icon>
+            </button>
+          </b-tooltip>
           
           <b-tooltip type="is-light" label="Liens favoris" position="is-right">
             <button class="button is-info mg-10" @click="open('starred')">
@@ -39,6 +45,10 @@
 
         <div v-if="section == 'overview'">
           <dashboard-overview/>
+        </div>
+
+        <div v-if="section == 'todos'">
+          <dashboard-todos/>
         </div>
 
         <div v-if="section == 'fastcal'">
@@ -64,11 +74,13 @@ import DashboardOverview from './DasboardOverview.vue'
 import DashboardFastcal from './DashboardFastcal.vue'
 import DashboardStars from './DashboardStars.vue'
 import DashboardSystemInfos from './DashboardSystemInfos.vue'
+import DashboardTodos from './DashboardTodos.vue'
 
 export default {
   name: 'sideDashboard',
   components: {
     DashboardOverview,
+    DashboardTodos,
     DashboardFastcal,
     DashboardStars,
     DashboardSystemInfos

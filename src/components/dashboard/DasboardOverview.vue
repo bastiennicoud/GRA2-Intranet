@@ -1,18 +1,34 @@
 <template>
   <div id="dashboard-overview">
 
-    <p class="title">Mon dashboard</p>
+    <p class="title">Dashboard</p>
 
-    <div class="mycal-message">
-      <b-message type="is-warning" has-icon>
-        Ralentissements de la connection internet sur le site de Sainte-Croix.
-      </b-message>
-      <b-message type="is-danger" has-icon>
-        MOOLDE.cpnv.ch momentanément indisponible.
-      </b-message>
-      <b-message type="is-info" has-icon>
-        Des opérations de mise a jour des systemes seront éfectuées les 3 et 4 février. Il faut s'attendre a des ralentissements.
-      </b-message>
+    <p class="subtitle is-4">Actuellement</p>
+
+    <b-message title="GRA1 - SC332" type="is-info" :closable="false">
+      Module graphisme 2 - MOTTIER André
+    </b-message>
+
+    <p class="subtitle is-4">Prochainement</p>
+
+    <b-message title="MAW1.2 - SC332" type="is-info" :closable="false">
+      Projet semestriel 1.2 - HURNI Pascal
+    </b-message>
+
+    <p class="subtitle is-4">Acces a internet</p>
+
+    <b-message type="is-success" has-icon>
+      <strong>Ouvert</strong>
+    </b-message>
+
+    <p class="subtitle is-4">Pages récentes</p>
+
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a>Agenda</a></li>
+        <li><a>Absences</a></li>
+        <li><a>MSDN academic alliance</a></li>
+      </ul>
     </div>
 
   </div>
