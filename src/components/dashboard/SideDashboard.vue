@@ -102,7 +102,7 @@ export default {
 <style lang="scss" scoped>
 #side-dashboard {
   height: 100%;
-  background-color: rgb(202, 202, 202)
+  background-color: hsl(0, 0%, 96%)
 }
 
 .no-margins {
@@ -110,7 +110,7 @@ export default {
 }
 
 .open {
-  width: 240px;
+  width: 425px;
 }
 
 .close {
@@ -118,11 +118,11 @@ export default {
 }
 
 .dashboard-icons {
-  width: 60px;
+  width: 40px;
 }
 
 .dashboard {
-  width: 180px;
+  width: 365px;
 }
 
 .mg-10 {

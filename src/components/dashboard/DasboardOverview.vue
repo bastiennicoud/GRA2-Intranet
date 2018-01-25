@@ -1,6 +1,20 @@
 <template>
   <div id="dashboard-overview">
-{{msg}}
+
+    <p class="title">Mon dashboard</p>
+
+    <div class="mycal-message">
+      <b-message type="is-warning" has-icon>
+        Ralentissements de la connection internet sur le site de Sainte-Croix.
+      </b-message>
+      <b-message type="is-danger" has-icon>
+        MOOLDE.cpnv.ch momentanément indisponible.
+      </b-message>
+      <b-message type="is-info" has-icon>
+        Des opérations de mise a jour des systemes seront éfectuées les 3 et 4 février. Il faut s'attendre a des ralentissements.
+      </b-message>
+    </div>
+
   </div>
 </template>
 
