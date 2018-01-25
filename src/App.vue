@@ -6,7 +6,7 @@
     <base-nav></base-nav>
 
     <!-- App content -->
-    <div class="columns is-gapless">
+    <div class="columns is-gapless clear-margin">
       <div class="column is-narrow">
 
         <!-- Displays the dashboard in the left of the site -->
@@ -58,6 +58,10 @@ html {
 
 body {
   min-height: 100%;
+}
+
+.clear-margin {
+  margin-bottom: 0px !important;
 }
 
 </style>

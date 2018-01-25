@@ -1,6 +1,22 @@
 <template>
   <div id="side-dashboard" :class="collapsed">
-    <h1>{{ msg }}</h1>
+
+    <div class="columns no-margins">
+      <div class="column is-narrow is-gapless">
+        <div class="dashboard-icons">
+
+          TUTU
+
+        </div>
+      </div>
+
+      <div v-if="collapse" class="column">
+
+        TATA
+
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -25,7 +41,11 @@ export default {
 <style lang="scss" scoped>
 #side-dashboard {
   height: 100%;
-  background-color: rgb(190, 87, 87)
+  background-color: rgb(202, 202, 202)
+}
+
+.no-margins {
+  margin: 0px;
 }
 
 .open {
@@ -34,5 +54,13 @@ export default {
 
 .close {
   width: 60px;
+}
+
+.dashboard-icons {
+  width: 60px;
+}
+
+.dashboard {
+  width: 180px;
 }
 </style>
