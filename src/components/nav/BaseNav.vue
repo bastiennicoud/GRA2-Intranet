@@ -23,19 +23,19 @@
               <router-link tag="li" :to="{ name: 'shedule' }">
                 <a><b-icon icon="calendar-multiple"></b-icon>Calendriers</a>
               </router-link>
-              <router-link tag="li" :to="{ name: 'home' }">
+              <router-link tag="li" :to="{ name: 'infos' }">
                 <a><b-icon icon="information"></b-icon>Informations</a>
               </router-link>
-              <router-link tag="li" :to="{ name: 'home' }">
+              <router-link tag="li" :to="{ name: 'docs' }">
                 <a><b-icon icon="file-document"></b-icon>Documents</a>
               </router-link>
-              <router-link tag="li" :to="{ name: 'home' }">
+              <router-link tag="li" :to="{ name: 'lists' }">
                 <a><b-icon icon="format-list-numbers"></b-icon>Listes</a>
               </router-link>
-              <router-link tag="li" :to="{ name: 'home' }">
+              <router-link tag="li" :to="{ name: 'apps' }">
                 <a><b-icon icon="apps"></b-icon>Applications</a>
               </router-link>
-              <router-link tag="li" :to="{ name: 'home' }">
+              <router-link tag="li" :to="{ name: 'wiki' }">
                 <a><b-icon icon="earth"></b-icon>Wiki</a>
               </router-link>
 

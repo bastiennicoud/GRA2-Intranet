@@ -1,6 +1,7 @@
 <template>
   <div id="side-dashboard" :class="collapsed">
 
+    <!-- Dashboard buttons on the left -->
     <div class="columns no-margins">
       <div class="column is-narrow is-gapless">
         <div class="dashboard-icons">
@@ -33,19 +34,23 @@
         </div>
       </div>
 
+      <!-- Dashboard content -->
       <div v-if="collapse" class="column">
 
         <div v-if="section == 'overview'">
-          TUTU
+          <dashboard-overview/>
         </div>
+
         <div v-if="section == 'fastcal'">
-          TUTUTU
+          <dashboard-fastcal/>
         </div>
+
         <div v-if="section == 'starred'">
-          TUTU
+          <dashboard-stars/>
         </div>
+
         <div v-if="section == 'system'">
-          TUTUTu
+          <dashboard-system-infos/>
         </div>
 
       </div>
@@ -55,7 +60,19 @@
 </template>
 
 <script>
+import DashboardOverview from './DasboardOverview.vue'
+import DashboardFastcal from './DashboardFastcal.vue'
+import DashboardStars from './DashboardStars.vue'
+import DashboardSystemInfos from './DashboardSystemInfos.vue'
+
 export default {
+  name: 'sideDashboard',
+  components: {
+    DashboardOverview,
+    DashboardFastcal,
+    DashboardStars,
+    DashboardSystemInfos
+  },
   data () {
     return {
       msg: 'Dashb',

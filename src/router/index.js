@@ -45,6 +45,31 @@ export default new Router({
           component: Booking
         }
       ]
+    },
+    {
+      path: '/infos',
+      name: 'infos',
+      component: Home
+    },
+    {
+      path: '/lists',
+      name: 'lists',
+      component: Home
+    },
+    {
+      path: '/docs',
+      name: 'docs',
+      component: Home
+    },
+    {
+      path: '/apps',
+      name: 'apps',
+      component: Home
+    },
+    {
+      path: '/wiki',
+      name: 'wiki',
+      component: Home
     }
   ],
   scrollBehavior (to, from, savedPosition) {
