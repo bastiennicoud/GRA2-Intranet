@@ -31,19 +31,55 @@
             {{ props.row.user.last_name }}
           </b-table-column>
 
-          <b-table-column field="date" label="ITIL" sortable centered>
+          <b-table-column field="date" label="08:00 08:45 ITIL" sortable centered>
             <span class="tag is-success" :class="props.row.itil === 0 ? 'is-success' : 'is-danger'">
               {{ props.row.itil === 0 ? 'Présent' : 'Absent' }}
             </span>
           </b-table-column>
 
-          <b-table-column field="date" label="Physique" sortable centered>
+          <b-table-column field="date" label="08:50 09:35 ITLI" sortable centered>
             <span class="tag is-success" :class="props.row.physique === 0 ? 'is-success' : 'is-danger'">
               {{ props.row.physique === 0 ? 'Présent' : 'Absent' }}
             </span>
           </b-table-column>
 
-          <b-table-column field="date" label="Gra2" sortable centered>
+          <b-table-column field="date" label="09:50 10:35 Physique" sortable centered>
+            <span class="tag is-success" :class="props.row.gra === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="10:40 11:25 Physique" sortable centered>
+            <span class="tag is-success" :class="props.row.gra === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="11:30 12:15 Physique" sortable centered>
+            <span class="tag is-success" :class="props.row.physique === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="13:30 14:15 GRA2" sortable centered>
+            <span class="tag is-success" :class="props.row.gra === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="14:20 15:05 GRA2" sortable centered>
+            <span class="tag is-success" :class="props.row.itil === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="15:20 16:05 GRA2" sortable centered>
+            <span class="tag is-success" :class="props.row.gra === 0 ? 'is-success' : 'is-danger'">
+              {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
+            </span>
+          </b-table-column>
+
+          <b-table-column field="date" label="16:10 16:55 GRA2" sortable centered>
             <span class="tag is-success" :class="props.row.gra === 0 ? 'is-success' : 'is-danger'">
               {{ props.row.gra === 0 ? 'Présent' : 'Absent' }}
             </span>
@@ -51,6 +87,15 @@
 
         </template>
       </b-table>
+
+      <b-pagination class="mg-top"
+        :total="total"
+        :current.sync="current"
+        :order="order"
+        :size="size"
+        :simple="isSimple"
+        :per-page="perPage">
+      </b-pagination>
 
     </section>
 
@@ -61,6 +106,12 @@
 export default {
   data () {
     return {
+      total: 30,
+      current: 4,
+      perPage: 2,
+      order: '',
+      size: '',
+      isSimple: false,
       // test datas (retrivet from a api in real case)
       tableData: [
         {
@@ -136,5 +187,9 @@ export default {
 <style lang="scss" scoped>
 #absence {
   margin-bottom: 60px;
+}
+
+.mg-top {
+  margin-top: 40px;
 }
 </style>
